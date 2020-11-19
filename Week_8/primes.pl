@@ -10,7 +10,7 @@ loop( F, N )
     loop( F1, N ).
 
 prime( P )
-:- \+ factorisable( P ).
+    :- \+ factorisable( P ).
 
 primes( A, B, [] )
     :- A > B.
