@@ -1,8 +1,8 @@
 
-last( [], X ).
-last( [H|T], X )
-    :- last( T, H ).
+last( [E], E ).
+last( [_|T], W )
+    :- last( T, W ).
 
 main
-    :- last( [ 1, 2, 3, 4, 5, 6 ], X ),
-        write( X ).
+    :- last( [ 1, 2, 3, 4, 5, 6 ], R ),
+        write( R ).
